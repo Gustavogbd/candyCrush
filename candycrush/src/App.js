@@ -183,6 +183,10 @@ const App = () => {
 
   return (
     <div className="app">
+
+      
+
+      <Scoreboard score={scoreDisplay}/>
       <div className="game">
         {currentColorArrangement.map((candyColor, index) => (
         <img 
@@ -199,7 +203,6 @@ const App = () => {
         onDragEnd={dragEnd}
         />))}
         </div>
-        <Scoreboard score={scoreDisplay}/>
     </div>
   );
 }
